@@ -1,0 +1,148 @@
+@keyframes moveTopAndBottom {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation: moveTopAndBottom 2.5s linear infinite;
+  }
+  @keyframes slide {
+    0% {
+      transform: translate3d(0,0, 0);
+    }
+  
+    100% {
+      transform: translate3d(100%, 0, 0);
+    }
+  }
+  
+  .containermodels {
+    min-width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    animation: slide 1s linear;
+    transform: translate3d(0, 0, 0);
+  } 
+  .titlefashion {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    font-family: Ubuntu;
+    font-size: 28px;
+    font-weight: normal;
+  }
+  .horizontallineleft {
+    width: 40%;
+    border-top: 2px solid  rgba(199, 174, 31, 0.711); /* Épaisseur et couleur du trait */
+    position: absolute;
+    margin-left: 1px;
+    left: 1px;
+  }
+  .horizontallineright {
+    width: 40%;
+    right: 1px;
+    position: absolute;
+    margin-right: 1px;
+    border-top: 2px solid  rgba(199, 174, 31, 0.711); /* Épaisseur et couleur du trait */
+  }
+  .backgroundmodel:hover {
+    opacity: 1.5;
+  }
+    .ModelScreen {
+        height: 20vh;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        perspective: 1000px; /* Définit la perspective pour l'effet 3D */
+       transition: background-color 0.3s; /* Animation de transition */
+        transition: transform 0.3s; /* Ajoute une transition pour une animation fluide */
+      }
+  
+      .ModelScreen:hover {
+        transform: rotateY(10deg) scale(1.05); /* Applique la transformation au survol */
+      }
+    .bodycaracteristic {
+        z-index: 1;
+        gap: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        font-family: Ubuntu;
+        font-size: 20px;
+    } 
+    .bodycaracteristic:hover {
+      font-size: 26px;
+      transform: rotateY(10deg) scale(1.05); /* Applique la transformation au survol */
+    }  
+    .imgmodels {
+      text-align: center;
+    }
+    
+  .gold {
+    font-size: 15px;
+  }
+  .rowone {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+  }
+  .rowone img {
+    width: 100%; /* Afficher les images en une ligne sur desktop */
+    height: 50vh;  /* Ajustez la hauteur pour maintenir la proportion d'origine */
+  }
+  /* Utilisation d'une media query pour ajuster la disposition en mobile */
+  @media (max-width: 800px) {
+    .rowone {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2px;
+    }
+    .rowone img {
+      width: 45%; /* Afficher 2 images par ligne en mobile */
+    }
+  }
+  
+  @media (max-width: 450px) {
+  
+    .titlefashion {
+      font-size: 20px;
+    }
+    .ModelScreen {
+      height: 15vh;
+    }
+    .containermodels {
+      gap:10px;
+    }
+    .bodycaracteristic  {
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 450px) {
+    .containermodels {
+      gap:8px;
+    }
+  }
+  .underimage {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }

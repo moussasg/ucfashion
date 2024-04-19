@@ -1,0 +1,240 @@
+.home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-color: #141414;
+  cursor: grab;
+  overflow: hidden;
+  background-image: url(../assets/bg/bg2.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.home .banner {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.home .bannerContentArea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+.home .bannerContentBody {
+  width: 100%;
+  max-width: 1200px;
+}
+.home .header {
+  height: 80px;
+  width: 100%;
+  margin: 20px;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  justify-content: end;
+  background-image: url(../assets/UClogo.png);
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.loaderPage {
+  position: absolute;
+  background-color: #141414;
+  border-radius: 0;
+  top: -100vh;
+  left: 0;
+  right: 0;
+  bottom: 100vh;
+  background-image: url(../assets/UClogo.png);
+  background-size: 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: loaderPage 3s linear;
+}
+@keyframes loaderPage {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  90% {
+    transform: translate3d(0, 100%, 0);
+    background-image: none;
+  }
+  92% {
+    transform: translate3d(0, 80%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.moreBtn {
+  position: absolute;
+  bottom: 100px;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.781);
+  text-align: center;
+  font-weight: 300;
+  font-family: Ubuntu-light;
+  animation: moreBtn 8s linear;
+}
+@keyframes moreBtn {
+  0% {
+    transform: translate3d(0, 200px, 0);
+  }
+  95% {
+    transform: translate3d(0, 200px, 0);
+  }
+  97% {
+    transform: translate3d(0, -50px, 0);
+  }
+  98% {
+    transform: translate3d(0, 10px, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////// */
+.page1,
+.page1_ {
+  height: 100vh;
+  width: 100vw;
+  margin-top: 100vh;
+  transition: 1s;
+  background-color: #0c0c0c;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page1_ {
+  margin-top: 0;
+}
+.page1_ .header {
+  height: 80px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  justify-content: end;
+  background-image: url(../assets/UClogo.png);
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.page1_ .secBtnList {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.page1_ .secBtn,
+.page1_ .secBtn1,
+.page1_ .secBtn2 {
+  width: 33%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(../assets/bg/cat1.jpeg);
+  background-repeat: no-repeat;
+  transition: 0.5s;
+  /* transition: all 0.5s; */
+  /* -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s; */
+}
+.page1_ .secBtn1 {
+  background-image: url(../assets/bg/cat2.jpeg);
+}
+.page1_ .secBtn2 {
+  background-image: url(../assets/bg/cat3.jpeg);
+}
+.page1_ .secBtn:hover,
+.page1_ .secBtn1:hover,
+.page1_ .secBtn2:hover {
+  width: 45%;
+}
+.page1_ .secBtnBody {
+  width: 100%;
+  height: 100%;
+  color: #ffffffdd;
+  background-image: linear-gradient(180deg, #0c0c0c00, #0c0c0cb0, #0c0c0c00);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2vw;
+  padding-top: 30vh;
+  box-sizing: border-box;
+}
+.page1_ .secBtnHeader {
+  width: 100%;
+  font-size: 4vw;
+  border-bottom: 1px solid #ffffffcc;
+  background-image: url(../assets/icons/arrowRight.svg);
+  background-position: calc(100% - 15px);
+  background-repeat: no-repeat;
+  background-size: 3vw;
+  font-weight: bold;
+  padding-bottom: 1vw;
+  margin-bottom: 6vh;
+  animation: secBtnHeader 2s linear;
+}
+@keyframes secBtnHeader {
+  0% {
+    transform: translate3d(0, -10vh, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.page1_ .desc {
+  width: 100%;
+  font-size: 1.2vw;
+  animation: text2 1.5s linear;
+}
+@keyframes text2 {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .page1_ .secBtnList {
+    flex-direction: column;
+  }
+  .page1_ .secBtn,
+  .page1_ .secBtn1,
+  .page1_ .secBtn2 {
+    width: 100%;
+    height: calc(100vh / 3);
+  }
+  .page1_ .secBtnBody {
+    padding-top: 10vh;
+  }
+  .page1_ .desc {
+    font-size: 3vw;
+  }
+  .page1_ .secBtnHeader {
+    font-size: 6vw;
+    margin-bottom: 1vh;
+    background-size: 6vw;
+  }
+}
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */

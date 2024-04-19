@@ -1,0 +1,72 @@
+.section4 {
+  padding: 5% 15%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.section4 div {
+  height: 25vw;
+  background-image: url(../../assets/bg/md1.jpg);
+  background-size: cover;
+  margin: 10px;
+}
+@media only screen and (max-width: 600px) {
+  .section4 {
+    padding: 5% 5%;
+    grid-template-columns: auto auto;
+  }
+  .section4 div {
+    height: 50vw;
+    background-image: url(../../assets/bg/md1.jpg);
+    background-size: cover;
+    margin: 6px;
+  }
+}
+.popup1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #00000063;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popupBody {
+  border-radius: 22px;
+  background-color: white;
+  margin: 20px;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  max-height: 600px;
+  background-image: url(../../assets/bg/md1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.popDetailsArea {
+  height: 100%;
+  border-radius: 20px;
+  background-image: linear-gradient(black, transparent, black);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+.popHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.xBtn {
+  width: 30px;
+  height: 30px;
+  background-image: url(../../assets/icons/x.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}

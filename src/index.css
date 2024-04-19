@@ -1,0 +1,82 @@
+@font-face {
+  font-family: Ubuntu;
+  src: url(./assets/font/Ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+  font-family: Ubuntu-light;
+  src: url(./assets/font/Ubuntu/Ubuntu-Light.ttf);
+}
+@font-face {
+  font-family: Ubuntu-bold;
+  src: url(./assets/font/Ubuntu/Ubuntu-Bold.ttf);
+}
+@font-face {
+  font-family: Ubuntu-Medium;
+  src: url(./assets/font/Ubuntu/Ubuntu-Medium.ttf);
+}
+
+body {
+  margin: 0px;
+  font-family: Ubuntu;
+  background-color: #f8f9fb;
+  color: #0d0b20;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #99999983;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3535357c;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #1d1d1d75;
+}
+
+@media only screen and (max-width: 800px) {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+}
+
+input {
+  font-family: Ubuntu;
+}
+select {
+  font-family: Ubuntu;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+.blackBtn,
+.blackBtn_ {
+  border: none;
+  border-radius: 5px;
+  background-color: #0d0c1e;
+  padding: 12px 28px;
+  color: white;
+  cursor: pointer;
+}
+.blackBtn_ {
+  background-color: #0d0c1e8c;
+}
+.blackBorderBtn {
+  border: 1px solid #0d0c1e;
+  border-radius: 5px;
+  color: #0d0c1e;
+  padding: 11px 27px;
+  background-color: white;
+  cursor: pointer;
+}

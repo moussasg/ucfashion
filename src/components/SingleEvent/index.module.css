@@ -1,0 +1,164 @@
+.section5 {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5% 8%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section5 .title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.section5 .desc {
+  text-align: center;
+  color: #626262;
+  line-height: 24px;
+  max-width: 600px;
+  padding: 25px 0;
+}
+.section5 .eventsArea {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+@media only screen and (max-width: 600px) {
+  .section5 .eventsArea {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////// */
+.event {
+  width: 22vw;
+  border-radius: 16px;
+  margin: 15px;
+  background-color: white;
+  box-shadow: 1px 1px 20px #7474741a;
+}
+.img {
+  height: 20vw;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  object-fit: cover;
+}
+.detgailsArea {
+  padding: 16px;
+  padding-bottom: 12px;
+}
+.eventTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #537bff;
+  font-size: 17px;
+  font-family: Ubuntu-Medium;
+  line-height: 20px;
+}
+.eventdate {
+  background-image: url(../../assets/icons/date.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 18px;
+  color: #626262ab;
+  font-size: 15px;
+  padding-left: 20px;
+}
+.eventDesc {
+  color: #626262;
+  font-size: 14px;
+  padding-top: 4px;
+}
+.locationArea {
+  border-top: 2px solid #b3b3b341;
+  padding: 14px;
+  padding-left: 44px;
+  background-image: url(../../assets/icons/pin.svg);
+  background-repeat: no-repeat;
+  background-position: 20px;
+  background-size: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #00000063;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.popupBody {
+  border-radius: 22px;
+  background-color: white;
+  margin: 20px;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  max-height: 600px;
+  background-image: url(../../assets/bg/md1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.popDetailsArea {
+  height: 100%;
+  border-radius: 20px;
+  background-image: linear-gradient(black, transparent, black);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+.popHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.xBtn {
+  width: 30px;
+  height: 30px;
+  background-image: url(../../assets/icons/x.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .event {
+    width: 85vw;
+    margin: 10px 0;
+  }
+  .img {
+    height: 80vw;
+  }
+  .eventTitle {
+    font-size: 15px;
+  }
+  .eventdate {
+    font-size: 12px;
+  }
+  .eventDesc {
+    font-size: 12px;
+  }
+  .locationArea {
+    font-size: 12px;
+    padding-top: 15px;
+    background-size: 15px;
+    padding-left: 35px;
+  }
+}
